@@ -1,0 +1,102 @@
+
+Selection: 1
+also installing the dependency 'httpuv'
+
+trying URL 'https://cran.rstudio.com/src/contrib/httpuv_1.3.3.tar.gz'
+Content type 'application/x-gzip' length 426665 bytes (416 KB)
+==================================================
+downloaded 416 KB
+
+trying URL 'https://cran.rstudio.com/src/contrib/shiny_0.12.2.tar.gz'
+Content type 'application/x-gzip' length 1486981 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *source* package 'httpuv' ...
+** package 'httpuv' successfully unpacked and MD5 sums checked
+** libs
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c filedatasource-unix.cpp -o filedatasource-unix.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c filedatasource-win.cpp -o filedatasource-win.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c http.cpp -o http.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c httpuv.cpp -o httpuv.o
+gcc -std=gnu99 -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c md5.c -o md5.o
+gcc -std=gnu99 -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c set_invalid_parameter.c -o set_invalid_parameter.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c uvutil.cpp -o uvutil.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c websockets-base.cpp -o websockets-base.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c websockets-hixie76.cpp -o websockets-hixie76.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c websockets-hybi03.cpp -o websockets-hybi03.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c websockets-ietf.cpp -o websockets-ietf.o
+g++ -I/app/vendor/R/lib/R/include -DNDEBUG -I./libuv/include -I./http-parser -I./sha1 -I./base64 -I/usr/local/include -I"/app/vendor/R/lib/R/library/Rcpp/include"   -fpic  -g -O2  -c websockets.cpp -o websockets.o
+make --directory=libuv \
+                CC="gcc -std=gnu99" CFLAGS="-g -O2  -fpic" AR="ar" RANLIB="ranlib" \
+    HAVE_DTRACE=0 \
+                libuv.a
+make[1]: Entering directory `/tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv'
+mkdir -p src/unix
+touch src/unix/.buildstamp
+gcc -std=gnu99 --std=c89 -pedantic -Wall -Wextra -Wno-unused-parameter -D_GNU_SOURCE -I/tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include -I/tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv-private -I/tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/src -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -g -O2  -fpic -c src/unix/async.c -o src/unix/async.o
+In file included from /app/vendor/.apt/usr/include/bits/fcntl.h:61:0,
+                 from /app/vendor/.apt/usr/include/fcntl.h:35,
+                 from /tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv-private/uv-unix.h:29,
+                 from /tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv.h:67,
+                 from src/unix/async.c:25:
+/app/vendor/.apt/usr/include/bits/fcntl-linux.h:316:17: warning: ISO C forbids zero-size array 'f_handle' [-Wpedantic]
+   unsigned char f_handle[0];
+                 ^
+In file included from /tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv-private/uv-unix.h:33:0,
+                 from /tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv.h:67,
+                 from src/unix/async.c:25:
+/app/vendor/.apt/usr/include/netinet/tcp.h:74:8: warning: struct has no named members [-Wpedantic]
+ struct tcphdr
+        ^
+/app/vendor/.apt/usr/include/netinet/tcp.h:210:3: warning: type of bit-field 'tcpi_snd_wscale' is a GCC extension [-Wpedantic]
+   u_int8_t tcpi_snd_wscale : 4, tcpi_rcv_wscale : 4;
+   ^
+/app/vendor/.apt/usr/include/netinet/tcp.h:210:3: warning: type of bit-field 'tcpi_rcv_wscale' is a GCC extension [-Wpedantic]
+/app/vendor/.apt/usr/include/netinet/tcp.h:271:16: warning: comma at end of enumerator list [-Wpedantic]
+   TCP_QUEUES_NR,
+                ^
+In file included from /tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv-private/uv-unix.h:35:0,
+                 from /tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv.h:67,
+                 from src/unix/async.c:25:
+/app/vendor/.apt/usr/include/netdb.h:692:59: warning: ISO C90 does not support 'static' or type qualifiers in parameter array declarators [-Wpedantic]
+ extern int getaddrinfo_a (int __mode, struct gaicb *__list[__restrict_arr],
+                                                           ^
+In file included from /app/vendor/.apt/usr/include/signal.h:32:0,
+                 from /tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv-private/uv-unix.h:42,
+                 from /tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv/include/uv.h:67,
+                 from src/unix/async.c:25:
+/app/vendor/.apt/usr/include/bits/sigset.h:117:65: warning: invoking macro __SIGSETFN argument 3: empty macro arguments are undefined in ISO C90 and ISO C++98 [enabled by default]
+ __SIGSETFN (__sigaddset, ((__set->__val[__word] |= __mask), 0), )
+                                                                 ^
+/app/vendor/.apt/usr/include/bits/sigset.h:118:66: warning: invoking macro __SIGSETFN argument 3: empty macro arguments are undefined in ISO C90 and ISO C++98 [enabled by default]
+ __SIGSETFN (__sigdelset, ((__set->__val[__word] &= ~__mask), 0), )
+                                                                  ^
+In file included from /app/vendor/.apt/usr/include/string.h:640:0,
+                 from src/unix/async.c:31:
+/app/vendor/.apt/usr/include/bits/string3.h:123:1: error: expected identifier or '(' before '/' token
+ // XXX We have no corresponding builtin yet.
+ ^
+/app/vendor/.apt/usr/include/bits/string3.h: In function 'stpncpy':
+/app/vendor/.apt/usr/include/bits/string3.h:134:5: warning: implicit declaration of function '__stpncpy_chk' [-Wimplicit-function-declaration]
+     return __stpncpy_chk (__dest, __src, __n, __bos (__dest));
+     ^
+/app/vendor/.apt/usr/include/bits/string3.h:134:5: warning: return makes pointer from integer without a cast [enabled by default]
+make[1]: *** [src/unix/async.o] Error 1
+make[1]: Leaving directory `/tmp/RtmpI4ZJfT/R.INSTALL835ac449ad/httpuv/src/libuv'
+make: *** [libuv.a] Error 2
+ERROR: compilation failed for package 'httpuv'
+* removing '/app/vendor/R/lib/R/library/httpuv'
+ERROR: dependency 'httpuv' is not available for package 'shiny'
+* removing '/app/vendor/R/lib/R/library/shiny'
+
+The downloaded source packages are in
+        '/tmp/RtmpmjsNuz/downloaded_packages'
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Warning messages:
+1: In install.packages("shiny") :
+  installation of package 'httpuv' had non-zero exit status
+2: In install.packages("shiny") :
+  installation of package 'shiny' had non-zero exit status
